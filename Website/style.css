@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+.logo{
+    width: 74px;
+    height: 80px;
+
+}
+nav{
+    background-color: rgb(235, 229, 229);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+nav ul li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 30px;
+    line-height: 50px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+nav a:hover {
+    background-color: #5f5858c1;
+    transition: background-color 0.3s ease;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(149, 142, 142, 0.726);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menu-button {
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar {
+        width: 100%;
+    }
+}
+.firstcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    padding: 30 20px;
+    border: 10px solid #100f0f;
+     background-image: url('https://static.vecteezy.com/system/resources/previews/020/458/477/non_2x/hand-drawn-travel-template-background-on-blue-background-travel-illustration-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    
+}
+.slideshow {
+    width: 60%;
+    height:500px;
+    border: 8px solid black;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+   
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: 1s;
+}
+.buttons{
+    text-align: center;
+    margin-top: -102px;
+    margin-bottom: 12px;
+    padding: 20px 15px;
+}
+button {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+button:hover {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    transform: translateY(-2px) scale(1.05);
+}
+/* Goa Attractions Section */
+.goa-attractions {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #f8f9fa;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 18px;
+    text-align: center;
+}
+.goa-attractions h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #0072ff;
+}
+.attraction-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.attraction {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 18px;
+    width: 300px;
+    transition: transform 0.2s;
+}
+.attraction img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.attraction h3 {
+    font-size: 1.2rem;
+    color: #00c6ff;
+    margin-bottom: 8px;
+}
+.attraction p {
+    font-size: 1rem;
+    color: #333;
+}
+#toggleAttractions {
+    margin-top: 28px;
+}
+@media (max-width: 900px) {
+    .attraction-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .attraction {
+        width: 100%;
+    }
+}
+.footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 210px; /* Adjusted for mobile */
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-brand img {
+            width: 150px; /* Adjusted for mobile */
+        }
+
+        .social-icons a {
+            margin: 0 5px; /* Adjusted for mobile */
+            color: rgb(255, 252, 252);
+            font-size: 16px; /* Adjusted for mobile */
+        }
+
+        .footer-copy {
+            margin-top: 10px; /* Adjusted for mobile */
+            font-size: 14px; /* Adjusted for mobile */
+        }
+

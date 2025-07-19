@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+             <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="cross.svg" alt=""></a></li>
+                <li><a href="">TRAVELLER</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <ul>
+                <li ><img  class="logo" src="main logo.png" alt="width="25px" height="25px""></li>
+                <li class="hideOnMobile" ><a href="#">Home</a></li>
+                <li class="hideOnMobile" ><a href="#">About</a></li>
+                <li class="hideOnMobile" ><a href="login.html">Login</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="menu.svg " alt" "></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstcontainer">
+            <h1>GOA - A Place to Visit</h1>
+         <section class="slideshow">
+            <article>
+                <figure>
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/06/Aguada-Fort_600.jpg" alt="width="1000" height="500" class="slide" >
+                    <img src="https://www.travelpeopleindia.in/wp-content/uploads/2018/08/Baga-Beach.jpg" alt="width="1000" height="500" class="slide" >
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/e5/48/80.jpg" alt="width="1000" height="500" class="slide" >
+                </figure>
+            </article>
+            
+        </section>
+         <div class="buttons">
+               <button onclick="goPrev()">Prev</button>
+               <button onclick="goNext()">Next</button>
+        </div>
+
+        <section class="goa-attractions">
+            <h2>Top Tourist Attractions in Goa</h2>
+            <div class="attraction-list">
+                <div class="attraction" onclick="location.href='firstplace.html'">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/06/Aguada-Fort_600.jpg" alt="Aguada Fort">
+                    <h3>Aguada Fort</h3>
+                    <p>A historic fort offering stunning views of the Arabian Sea and a glimpse into Goa's colonial past.</p>
+                </div>
+                <div class="attraction" onclick="location.href='secondplace.html'">
+                    <img src="https://www.travelpeopleindia.in/wp-content/uploads/2018/08/Baga-Beach.jpg" alt="Baga Beach">
+                    <h3>Baga Beach</h3>
+                    <p>Famous for its vibrant nightlife, water sports, and beach shacks, Baga Beach is a must-visit for every traveler.</p>
+                </div>
+                <div class="attraction" onclick="location.href='thirdplace.html'">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/e5/48/80.jpg" alt="Dudhsagar Falls">
+                    <h3>Old Goa Church</h3>
+                    <p>One of India's tallest waterfalls, Dudhsagar offers breathtaking natural beauty and adventure opportunities.</p>
+                </div>
+            </div>
+            <button id="toggleAttractions">Show More</button>
+        </section>  
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h1>TRAVELLER</h1>
+                <p>A Travel Guide</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="Images/facebook.png" alt="Facebook" width="30"></a>
+                    <a href="#"><img src="Images/instagram.png" alt="Instagram" width="30"></a>
+                    <a href="#"><img src="Images/twitter.png" alt="Twitter" width="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">&copy; 2024 ADI Fitness. All rights reserved.</div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

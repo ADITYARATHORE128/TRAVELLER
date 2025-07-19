@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    width: 100%;
+    background-color: #090a0a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+}
+.aguada-main {
+    margin-top: 60px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    padding: 30 20px;
+    border: 10px solid #100f0f;  
+    background-image: url('https://i.pinimg.com/736x/a3/71/ac/a371ac5e2da495155c8b2bc1b5c94dd4.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.slideshow {
+    width: 60%;
+    height:500px;
+    border: 8px solid black;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 654px;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: 1s;
+}
+.buttons{
+    text-align: center;
+    margin-top: -102px;
+    margin-bottom: 12px;
+    padding: 20px 15px;
+}
+button {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+button:hover {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    transform: translateY(-2px) scale(1.05);
+}
+.aguada-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: -43px auto;
+    padding: 60px;
+    background-color: rgba(142, 88, 88, 0.188);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 10px solid #100f0f;
+}
+.aguada-history h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.back {
+    background-color: #f44336;
+    color: rgb(251, 248, 248);
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+
